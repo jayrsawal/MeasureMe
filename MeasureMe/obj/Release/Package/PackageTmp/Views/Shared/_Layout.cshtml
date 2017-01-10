@@ -1,0 +1,70 @@
+﻿@using MeasureMe.Models
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measure Me | @ViewBag.Title</title>
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="nav-container">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("MEASURE ME", "Index", "Main", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    @if (Request.IsAuthenticated) {
+        <div class="nav-data">
+            <div id="quick-add" onclick="openMeasurementMenu()">
+                <a>+</a>
+            </div>
+            <div class="quick-measure" id="measure-form" style="display: none;">
+                @Html.Partial("_MeasurePartial")
+            </div>
+            <div class="quick-measure" id="weight-form" style="display: none;">
+                @Html.Partial("_WeightPartial")
+            </div>
+            <div class="quick-measure" id="data-holder" style="display: none;">
+            </div>
+            <div class="quick-measure" id="measure-menu" style="display: none;">
+                <div class="row center-content">
+                    <div class="col-sm-12 measure-partial" onclick="addMeasurements()">
+                        Measurements
+                    </div>
+                    <div class="col-sm-12 measure-partial" onclick="addWeight()">
+                        Body Weight
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <div>test</div>
+    <div class="container container-table body-content center-content vertical-center">
+        @RenderBody()
+        <div id="snacks"></div>
+    </div>
+    <div class="validation-summary">
+        @if (@Html.ValidationMessage("error").ToString() != "") {
+            // show error
+            @Html.ValidationMessage("error");
+        }
+    </div>
+    <div class="app-status">@if (ViewBag.Status != null) {@ViewBag.Status;}</div>
+    <input type="hidden" id="jq-gender" value="@(ViewBag.Gender ?? "")" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

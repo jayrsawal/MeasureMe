@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model MeasureMe.Models.LoginModel
+
+<div class="row center-content body-render" id="login">
+    @using (Html.BeginForm()) {
+        <div class="form-group">
+            <div class="col-sm-12">
+                <label for="Username">username</label><input name="Username" class="form-control input-validation-error text-box single-line" id="Username" type="text" value="" data-val-required="The Username field is required." data-val="true" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <label for="Password">password</label><input name="Password" class="form-control input-validation-error text-box single-line password" id="Password" type="password" value="" data-val-required="The Password field is required." data-val="true" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input class="btn btn-default accept" type="submit" value="Login" />
+            </div>
+        </div>
+    }
+
+    Not a member yet? <a href="~/Main">Register Now</a>
+</div>

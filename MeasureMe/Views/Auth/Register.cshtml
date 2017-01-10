@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model MeasureMe.Models.RegisterModel
+<div class="row center-content body-render" id="register">
+    <form id="register-form" class="form-horizontal" action="@Url.Action("Register", "Auth")" method="post">
+        <div class="form-group">
+            <div class="col-sm-12">
+                <label for="Username">username</label><input name="Username" class="form-control input-validation-error text-box single-line" id="Username" type="text" value="" data-val-required="The Username field is required." data-val="true" placeholder="Username">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <label for="Email">email</label><input name="Email" class="form-control input-validation-error text-box single-line" id="Email" type="email" value="" data-val-required="The Email field is required." data-val="true" placeholder="Email Address">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <label for="Password">password</label><input name="Password" class="form-control input-validation-error text-box single-line password" id="Password" type="password" value="" data-html="true" data-toggle="valid-password" title="Password Requirements" data-content="Passwords must contain: <ul><li>Atleast 8 characters</li><li>Atleast one special character ($#_)</li><li>A mix of lower case and upper case letters</li></ul>" data-val-required="The Password field is required." data-val="true" placeholder="Choose your password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <div class="btn-group" data-toggle="buttons">
+                    <label for="Gender">gender</label>
+                    <label class="btn btn-primary active">
+                        <input type="radio" name="Gender" id="Male" value="M" checked> Male
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="Gender" id="Female" value="F"> Female
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <label for="DOB">DOB</label><input name="DOB" class="form-control input-validation-error text-box single-line" id="DOB" type="date" value="" data-html="true" data-val="true" placeholder="Date Of Birth">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <label for="Height">height</label><input name="Height" class="form-control input-validation-error text-box single-line" id="Height" type="text" value="" data-html="true" data-val="true" placeholder="How tall are you? (cm)">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input type="submit" class="btn btn-default accept" value="Register" id="register-btn" />
+            </div>
+        </div>
+    </form>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/auth")

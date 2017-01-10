@@ -1,0 +1,1010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAriKIlTD9mki9oHCgpQGjlwAAAAACAAAAAAAQZgAAAAEAACAAAADaCq62pVKZGWp6RHNreSuw4Ur1LLbwB9xU5pP2bvsJXwAAAAAOgAAAAAIAACAAAABTAZSNbarzLxl6sWMn4nks5J9cj7mstoLmYghq3fg/yiAAAAC3tcS3XtJtlGFnYYH8YLgVjFwrIhR+4DkUpPWYWyOk4UAAAABmnbTvE9FOvtHHbXnCawbV078CY5ELf1X9dABapfjHTPDfhnW6c8kA9bCPYpsDjw3ihKLWUgc6DmlPa/iZEFey</EncryptedPassword>
+    <_PublishTargetUrl>ftp://166.62.120.241/oducado.com/measureme</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="bin/AdoLib.dll">
+      <publishTime>09/10/2016 18:00:46</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="bin/MeasureMe.dll">
+      <publishTime>11/01/2016 21:00:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>06/06/2016 15:40:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/06/2016 10:45:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/06/2016 10:42:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2015 13:16:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 13:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 13:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/25/2013 15:40:12</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 12:19:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/17/2013 17:03:52</publishTime>
+    </File>
+    <File Include="C3/.editorconfig">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/.gitignore">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/.jshintrc">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/.travis.yml">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/bower.json">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/c3-0.4.11.zip">
+      <publishTime>10/24/2016 19:48:13</publishTime>
+    </File>
+    <File Include="C3/c3.css">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/c3.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/c3.min.css">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/c3.min.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/component.json">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/CONTRIBUTING.md">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/extensions/chart-bubble/bubble.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/extensions/chart-bubble/c3.css">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/extensions/chart-bubble/c3.min.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/extensions/chart-bubble/index.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/extensions/exporter/config.json">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/extensions/exporter/phantom-exporter.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/extensions/exporter/test.png">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/extensions/js/c3ext.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/Gruntfile.coffee">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/css/bootstrap.min.css">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/css/c3.css">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/css/index.css">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/css/style.css">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test.csv">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test.json">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test.tsv">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test2.csv">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test2_ts.csv">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test3.csv">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test_2.json">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test_3.json">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/data/c3_test_ts.csv">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/index.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/js/c3.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/js/c3.min.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/js/extensions">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/js/require.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/js/samples/plugin.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/js/samples/requirejs.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/js/samples/zoom_reduction.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_axis_label.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_axis_range.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_category.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_data_colors.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_flow.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_flow_timeseries.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_legend.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_tooltip_show.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_transform.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_xgrid_lines.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/api_ygrid_lines.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/area_zerobased.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_padding.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_range.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_x_extent.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_x_localtime.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_x_range_timeseries.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_x_tick_culling.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_x_tick_fit.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_x_tick_rotate.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_x_tick_values.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_y2.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/axes_y_default.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/bar_zerobased.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/bindto.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/categorized.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_area.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_area_spline.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_area_spline_stacked.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_area_stacked.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_area_step.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_area_step_stacked.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_bar.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_bar_stacked.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_combination.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_donut.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_gauge.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_pie.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_pie_sort.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_scatter.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_spline.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_step.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/chart_step_category.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/custom_xs_scale.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/custom_x_categorized.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/custom_x_scale.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_columned.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_hide.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_json.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_label.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_label_format.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_load.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_load_timeseries.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_region.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_region_timeseries.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_rowed.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/data_url.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/domain_y.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/element.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/emptydata.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/grids.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/grids_timeseries.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/grid_focus.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/grid_x_lines.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/grid_x_lines_timeseries.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/interaction_enabled.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/legend.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/padding.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/padding_update.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/plugin.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/point_r.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/regions.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/regions_timeseries.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/requirejs.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/selection.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/simple.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/subchart.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/subchart_onbrush.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/timeseries.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/timeseries_date.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/timeseries_descendent.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/timeseries_raw.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/tooltip_grouped.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/tooltip_show.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/zoom.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/zoom_category.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/zoom_onzoom.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/htdocs/samples/zoom_reduction.html">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/karma.conf.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/LICENSE">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/package.json">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/README.md">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/api.axis-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/api.data-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/api.focus-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/api.grid-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/api.load-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/api.region-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/api.zoom-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/arc-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/axis-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/c3-helper.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/c3-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/class-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/core-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/data-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/domain-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/grid-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/interaction-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/legend-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/shape.bar-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/shape.line-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/svg-helper.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/title-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/tooltip-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/type-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/spec/zoom-spec.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.axis.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.category.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.chart.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.color.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.data.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.flow.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.focus.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.grid.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.group.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.legend.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.load.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.region.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.selection.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.show.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.tooltip.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.transform.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.x.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/api.zoom.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/arc.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/axis.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/c3.axis.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/cache.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/category.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/class.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/clip.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/color.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/config.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/core.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/data.convert.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/data.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/data.load.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/domain.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/drag.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/format.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/grid.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/head.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/interaction.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/legend.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/polyfill.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/region.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scale.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/arc.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/area.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/axis.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/bar.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/brush.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/chart.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/focus.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/grid.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/legend.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/line.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/main.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/point.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/region.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/select_drag.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/text.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/title.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/scss/tooltip.scss">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/selection.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/shape.bar.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/shape.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/shape.line.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/size.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/subchart.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/tail.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/text.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/title.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/tooltip.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/type.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/ua.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/util.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="C3/src/zoom.js">
+      <publishTime>05/03/2016 18:37:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>09/25/2016 21:59:47</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Content/scroll.css">
+      <publishTime>10/23/2016 13:52:50</publishTime>
+    </File>
+    <File Include="Content/site-ie.css">
+      <publishTime>10/25/2016 19:31:37</publishTime>
+    </File>
+    <File Include="Content/site.css">
+      <publishTime>11/01/2016 20:23:30</publishTime>
+    </File>
+    <File Include="Content/snackbar.css">
+      <publishTime>10/13/2016 22:55:01</publishTime>
+    </File>
+    <File Include="D3/d3.js">
+      <publishTime>05/04/2016 17:29:50</publishTime>
+    </File>
+    <File Include="D3/d3.min.js">
+      <publishTime>05/04/2016 17:29:52</publishTime>
+    </File>
+    <File Include="D3/d3.zip">
+      <publishTime>10/24/2016 20:11:11</publishTime>
+    </File>
+    <File Include="D3/LICENSE">
+      <publishTime>01/28/2016 16:09:48</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="images/concrete_seamless.png">
+      <publishTime>02/08/2015 20:53:22</publishTime>
+    </File>
+    <File Include="JQueryUI/AUTHORS.txt">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/external/jquery/jquery.js">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/images/ui-icons_444444_256x240.png">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/images/ui-icons_555555_256x240.png">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/images/ui-icons_777620_256x240.png">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/images/ui-icons_777777_256x240.png">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/images/ui-icons_cc0000_256x240.png">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/images/ui-icons_ffffff_256x240.png">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/index.html">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/jquery-ui.css">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/jquery-ui.js">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/jquery-ui.min.css">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/jquery-ui.min.js">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/jquery-ui.structure.css">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/jquery-ui.structure.min.css">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/jquery-ui.theme.css">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/jquery-ui.theme.min.css">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/LICENSE.txt">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="JQueryUI/package.json">
+      <publishTime>09/27/2016 03:27:34</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.19-build00125.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.19-build00125.min.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/login.js">
+      <publishTime>10/13/2016 22:58:04</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Scripts/site.js">
+      <publishTime>11/01/2016 20:56:45</publishTime>
+    </File>
+    <File Include="Views/Auth/Login.cshtml">
+      <publishTime>10/26/2016 19:58:12</publishTime>
+    </File>
+    <File Include="Views/Auth/Register.cshtml">
+      <publishTime>10/26/2016 20:04:35</publishTime>
+    </File>
+    <File Include="Views/Body/Index.cshtml">
+      <publishTime>10/26/2016 00:14:51</publishTime>
+    </File>
+    <File Include="Views/Body/Measure.cshtml">
+      <publishTime>10/26/2016 00:14:53</publishTime>
+    </File>
+    <File Include="Views/Main/Error.cshtml">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Views/Main/Home.cshtml">
+      <publishTime>10/26/2016 20:46:48</publishTime>
+    </File>
+    <File Include="Views/Main/Index.cshtml">
+      <publishTime>09/26/2016 22:27:36</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>10/26/2016 21:09:20</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>10/26/2016 21:11:07</publishTime>
+    </File>
+    <File Include="Views/Shared/_MeasurePartial.cshtml">
+      <publishTime>10/26/2016 20:05:20</publishTime>
+    </File>
+    <File Include="Views/Shared/_WeightPartial.cshtml">
+      <publishTime>10/26/2016 20:11:46</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>09/19/2016 22:53:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/25/2016 23:43:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

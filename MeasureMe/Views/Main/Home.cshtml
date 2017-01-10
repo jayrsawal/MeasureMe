@@ -1,0 +1,347 @@
+﻿@using MeasureMe.Common;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model MeasureMe.Page.BodyModel
+
+@{
+    double nBW = @Model.LastWeight;
+    double nLM = @Model.Fat.LeanMass;
+    double nFM = @Model.Fat.FatMass;
+}
+
+<script type="text/javascript">
+    var aHistory = @JavaScriptConvert.SerializeObject(Model.History.Measurements);
+    var nBW = @nBW;
+    var nLM = @nLM;
+    var nFM = @nFM;
+</script>
+<div class="row center-content" id="home">
+    <div class="row">
+        <div class="col-sm-4 col-centered">
+            <div class="row widget-container">
+                <div class="row widget">
+                    <div class="col-sm-6 widget-label">
+                        BF
+                    </div>
+                    <div class="col-sm-6 widget-text">
+                        @{
+                            var dBodyFat = Model.Fat.BodyFat * 100;
+                        }
+                        @String.Format("{0:n2}", dBodyFat) %
+                    </div>
+                </div>
+            </div>
+            <div class="row widget-container" id="fat-graph">
+                <div class="row widget">
+                    <div class="col-sm-12">
+                        <div class="row widget">
+                            <div class="col-sm-6 widget-label">
+                                Weight
+                            </div>
+                            <div class="col-sm-6 widget-text">
+                                @String.Format("{0:n2}", Model.LastWeight) kg
+                            </div>
+                        </div>
+                        <div class="row widget">
+                            <div class="col-sm-6 widget-label">
+                                Lean
+                            </div>
+                            <div class="col-sm-6 widget-text">
+                                @String.Format("{0:n2}", Model.Fat.LeanMass) kg
+                            </div>
+                        </div>
+                        <div class="row widget">
+                            <div class="col-sm-6 widget-label">
+                                Fat
+                            </div>
+                            <div class="col-sm-6 widget-text">
+                                @String.Format("{0:n2}", Model.Fat.FatMass) kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row widget-container">
+                <div class="row widget">
+                    <div class="col-sm-6 widget-label">
+                        BMI
+                    </div>
+                    <div class="col-sm-6 widget-text">
+                        @{
+                            var dKG = Model.Measurement.BodyWeight * 2.205;
+                            var dBMI = (dKG / ((Model.User.Height * 0.393701) * (Model.User.Height * 0.393701))) * 703;
+                        }
+                        @String.Format("{0:n2}", dBMI)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="grid-box carousel">
+                <div class="col-sm-12 carousel-item">
+                    <table class="table-striped">
+                        <thead>
+                            <tr>
+                                <th>Body Part</th>
+                                <th>Measurement (cm)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Neck</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Neck)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Shoulder</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Shoulder) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Arm</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Arm) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Forearm</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Forearm) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Wrist</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Wrist) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chest</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Chest) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Waist</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Waist) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Abdomen</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Abdomen) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hips</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Hips) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Thigh</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Thigh) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Knee</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Knee) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Calf</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.Calf) cm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Body Weight</td>
+                                <td>
+                                    @String.Format("{0:n2}", Model.Measurement.BodyWeight) kg
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Body Fat</td>
+                                <td>
+                                    @{
+                                        var dBodyFat2 = Model.Measurement.BodyFat * 100;
+                                    }
+                                    @String.Format("{0:n2}", dBodyFat2) %
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="grid-box">
+                <div class="row">
+                    <div class="col-sm-12 carousel-item">
+                        <table class="table-striped">
+                            <thead>
+                                <th colspan="3">Golden Ratios</th>
+                            </thead>
+                            <tbody>
+                                @if (Model.User.Gender == "M") {
+                                    <tr>
+                                        <td>
+                                            Neck
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Neck) cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Shoulder
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Shoulder) cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Chest
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Chest) cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Arm
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Arm) cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Forearm
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Forearm) cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Calf
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Calf) cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Thigh
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Thigh) cm
+                                        </td>
+                                    </tr>
+                                } else {
+                                    <tr>
+                                        <td>
+                                            Shoulder
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Shoulder) cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Waist
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Waist) cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Hips
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:n2}", Model.Ratio.Hips) cm
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 grid-box background-none grid-button">
+                <div class="row">
+                    <button class="btn btn-default" onclick="showData();">Show Data</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-default" onclick="showGraph();">Show Graphs</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="graph-data" style="display: none;">
+        <div class="row" id="measure-data" style="display: none;">
+            <table>
+                <tr class="first-row">
+                    <th>Date</th>
+                    <th>Neck</th>
+                    <th>Shoulder</th>
+                    <th>Arm</th>
+                    <th>Forearm</th>
+                    <th>Wrist</th>
+                    <th>Chest</th>
+                    <th>Waist</th>
+                    <th>Abdomen</th>
+                    <th>Hips</th>
+                    <th>Thigh</th>
+                    <th>Knee</th>
+                    <th>Calf</th>
+                    <th>Body Weight</th>
+                    <th>Body Fat</th>
+                    <th>Lean Mass</th>
+
+                </tr>
+                @foreach (var x in Model.History.Measurements) {
+                    <tr>
+                        <td>@Html.Raw(x.Created.ToString("yyyy-MM-dd"))</td>
+                        <td>@String.Format("{0:n2}", x.Neck) cm</td>
+                        <td>@String.Format("{0:n2}", x.Shoulder) cm</td>
+                        <td>@String.Format("{0:n2}", x.Arm) cm</td>
+                        <td>@String.Format("{0:n2}", x.Forearm) cm</td>
+                        <td>@String.Format("{0:n2}", x.Wrist) cm</td>
+                        <td>@String.Format("{0:n2}", x.Chest) cm</td>
+                        <td>@String.Format("{0:n2}", x.Waist) cm</td>
+                        <td>@String.Format("{0:n2}", x.Abdomen) cm</td>
+                        <td>@String.Format("{0:n2}", x.Hips) cm</td>
+                        <td>@String.Format("{0:n2}", x.Thigh) cm</td>
+                        <td>@String.Format("{0:n2}", x.Knee) cm</td>
+                        <td>@String.Format("{0:n2}", x.Calf) cm</td>
+                        <td>@String.Format("{0:n2}", x.BodyWeight) kg</td>
+                        <td>
+                            @{
+                                var xBodyFat = x.BodyFat * 100;
+                            }
+                            @String.Format("{0:n2}", xBodyFat) %
+                        </td>
+                        <td>
+                            @{
+                                var xLeanMass = x.BodyWeight - (x.BodyWeight * x.BodyFat);
+                            }
+                            @String.Format("{0:n2}", xLeanMass) kg
+                        </td>
+                    </tr>
+                                }
+            </table>
+        </div>
+
+        <div class="row" id="measure-graph">
+
+        </div>
+    </div>
+</div>

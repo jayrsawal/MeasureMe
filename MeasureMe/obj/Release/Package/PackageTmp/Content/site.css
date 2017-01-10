@@ -1,0 +1,408 @@
+﻿* {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+body {
+    background: rgb(229, 229, 229) url("../images/concrete_seamless.png") repeat left top;
+    font-size: 16px;
+}
+
+body a {
+    color: rgb(47, 69, 86);
+}
+
+body a:hover {
+    color: rgb(65, 91, 94);
+}
+
+.btn-primary {
+    background-color: rgb(47, 69, 86);
+}
+
+.btn-primary.active {
+    background-color: rgb(65, 94, 114);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100%;
+    min-height: 100vh;
+    height: 100px;
+    
+}
+
+head>body .body-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+    height: auto;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+#nav-container {
+    background-color: rgb(47, 69, 86);
+    color: white;
+    border: none;
+}
+
+    #nav-container a {
+        color: white;
+    }
+
+input[type=submit], input[type=button] {
+    width: 100%;
+    color: white;
+    border: none;
+}
+
+input.form-control, .body-content input[type=submit], .body-content input[type=button] {
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+    height: 100%;
+}
+
+.accept {
+    background-color: rgb(65, 94, 114);
+    color: rgb(47, 69, 86);
+}
+
+    .accept:hover {
+        background-color: rgb(255, 125, 125);
+        color: white;
+    }
+
+.warning {
+    background-color: #ea574d;
+}
+
+    .warning:hover {
+        background-color: #ff6156;
+        color: white;
+    }
+
+.widget-container {
+    display: flex;
+    min-height: 100px;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+}
+
+.widget.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(90, 90, 90);
+}
+
+.widget-text {
+    font-size: 18px;
+    white-space: nowrap;
+    color: rgb(142, 142, 142);
+}
+
+.widget-label, .widget-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.body-render {
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+}
+
+.navbar .login {
+    height: 100%;
+}
+
+    .navbar .login input {
+        margin-top: 10px;
+        border-radius: 0px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .navbar .login .form-inline .form-group {
+        margin-left: 7px;
+    }
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.popover {
+    width: 400px;
+}
+
+
+.center-content {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 400px;
+}
+
+.grid-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.grid-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+}
+
+.grid-button {
+}
+
+    .grid-button button {
+        width: 100%;
+        max-width: 600px;
+        background-color: rgb(65, 94, 114);
+        color: white;
+    }
+
+        .grid-button button:hover {
+            background-color: rgb(255, 125, 125);
+        }
+
+#home button {
+    border-radius: 0;
+    border: 0;
+}
+
+.background-none {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.carousel {
+    height: 400px;
+    width: 100%;
+}
+
+.carousel-item table {
+    text-align: left;
+    width: 100%;
+}
+
+#register, #login {
+    background-color: rgb(36, 156, 135);
+    width: 50%;
+    color: white;
+}
+
+#snackbar {
+    cursor: pointer;
+}
+
+    #snackbar.warning {
+        background: #ea574d;
+    }
+
+#home {
+    /*width: 100%;
+    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 0 30px 0;*/
+    margin-top: 50px;
+}
+
+.nav-data {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    min-width: 400px;
+    height: 35px;
+    z-index: 99;
+    background-color: rgb(67, 173, 154);
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+#quick-add {
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+    height: 54px;
+    width: 54px;
+    font-size: 54px;
+    line-height: 36px;
+    border-radius: 100%;
+    background-color: white;
+    border: 4px solid rgb(82, 110, 130);
+}
+
+    #quick-add a {
+        color: rgb(65, 94, 114);
+    }
+
+        #quick-add a:hover {
+            text-decoration: none;
+            cursor: pointer;
+            color: #ea574d;
+        }
+
+#measure-close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+    #measure-close a:hover {
+        text-decoration: none;
+    }
+
+#measure-form {
+}
+
+.measure-partial {
+    width: 100%;
+    padding: 25px;
+    margin: 0 0;
+    background-color: rgb(65, 94, 114);
+    cursor: pointer;
+    border-bottom: 1px solid rgb(47, 69, 86);
+}
+
+    .measure-partial:hover {
+        background-color: rgb(255, 125, 125);
+        color: rgb(47, 69, 86);
+    }
+
+#simplify {
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    width: 150px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(65, 94, 114, 0.8);
+    color: rgba(65, 94, 114, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+#simplify:hover {
+    background-color: rgba(65, 94, 114, 0.2);
+}
+
+#simplify.active {
+    width: 125px;
+    background-color: rgba(65, 94, 114, 0.8);
+    color: white;
+}
+
+.quick-measure {
+    padding-top: 15px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.validation-summary, .app-status {
+    display: none;
+}
+/* I don't want to use labels in this layout */
+form label {
+    display: none;
+}
+
+#measure-data {
+    white-space: nowrap;
+}
+
+#measure-data table {
+}
+
+#measure-data table tr {
+    display: inline-block;
+}
+
+#measure-data table tr th, #measure-data table tr td {
+    display: block;
+    padding: 10px;
+    color: rgb(65, 91, 94);
+    border-bottom: 1px solid white;
+}
+
+#measure-data table tr th {
+    border-right: 1px solid white;
+}
+
+#measure-data table tr td:first-of-type, #measure-data table tr:first-of-type {
+    font-weight: bold;
+    background-color: rgba(164, 220, 208, 0.5) !important;
+    color: rgb(65, 91, 94);
+}
+
+#measure-data table tr:not(.first-row) td, #measure-data table tr:not(.first-row) th {
+    background-color: rgba(200, 246, 238, 0.5);
+    color: rgb(65, 91, 94);
+    border-bottom: 1px dashed white;
+}
+
+
+#graph-data {
+    margin: auto;
+    padding: 15px 25px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    min-width: 400px;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 99;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+}
+
+#fat-graph {
+    height: 100%;
+    padding-top: 0px;
+}
+
+div[class^="col-sm-"] {
+    margin: 0 auto;
+ 
+}

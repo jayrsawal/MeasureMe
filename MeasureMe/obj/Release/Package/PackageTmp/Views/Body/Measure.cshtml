@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model MeasureMe.Models.MeasureModel
+
+<div class="row center-content body-render" id="login">
+    @using (Html.BeginForm()) {
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="BodyWeight" class="form-control input-validation-error text-box single-line" id="BodyWeight" type="text" value="" data-val="true" placeholder="Body Weight (lbs)" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Neck" class="form-control input-validation-error text-box single-line" id="Neck" type="text" value="" data-val="true" placeholder="Neck" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Shoulder" class="form-control input-validation-error text-box single-line" id="Shoulder" type="text" value="" data-val="true" placeholder="Shoulder" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Arm" class="form-control input-validation-error text-box single-line" id="Arm" type="text" value="" data-val="true" placeholder="Arm" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Forearm" class="form-control input-validation-error text-box single-line" id="Forearm" type="text" value="" data-val="true" placeholder="Forearm" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Wrist" class="form-control input-validation-error text-box single-line" id="Wrist" type="text" value="" data-val="true" placeholder="Wrist" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Chest" class="form-control input-validation-error text-box single-line" id="Chest" type="text" value="" data-val="true" placeholder="Chest" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Waist" class="form-control input-validation-error text-box single-line" id="Waist" type="text" value="" data-val="true" placeholder="Waist" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Abdomen" class="form-control input-validation-error text-box single-line" id="Abdomen" type="text" value="" data-val="true" placeholder="Abdomen" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Hips" class="form-control input-validation-error text-box single-line" id="Hips" type="text" value="" data-val="true" placeholder="Hips" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Thigh" class="form-control input-validation-error text-box single-line" id="Thigh" type="text" value="" data-val="true" placeholder="Thigh" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Knee" class="form-control input-validation-error text-box single-line" id="Knee" type="text" value="" data-val="true" placeholder="Knee" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Calf" class="form-control input-validation-error text-box single-line" id="Calf" type="text" value="" data-val="true" placeholder="Calf" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input class="btn btn-default" type="submit" value="Save" />
+            </div>
+        </div>
+    }
+    @Html.ValidationSummary(true)
+</div>
