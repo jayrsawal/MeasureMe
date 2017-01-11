@@ -34,7 +34,7 @@ namespace MeasureMe.Controllers {
             }
 
             if (TempData["Error"] != null) {
-                return RedirectToAction("~/Main/Home");
+                return RedirectToAction("../Main/Home");
             }
 
             try {
@@ -46,14 +46,14 @@ namespace MeasureMe.Controllers {
             } catch {
                 TempData["Error"] = "Unable to add measurements - Please try again later";
             }
-            return RedirectToAction("~/Main/Home");
+            return RedirectToAction("../Main/Home");
         }
 
         [HttpPost]
         public ActionResult Weight(WeightModel model) {
             if(model.BodyWeight == 0) {
                 TempData["Error"] = "Please provide your body weight";
-                return RedirectToAction("~/Main/Home");
+                return RedirectToAction("../Main/Home");
             }
             try {
                 Body b = new Body(this.db, this.user);
@@ -63,7 +63,7 @@ namespace MeasureMe.Controllers {
             } catch {
                 TempData["Error"] = "Unable to record body weight - Please try again later";
             }
-            return RedirectToAction("~/Main/Home");
+            return RedirectToAction("../Main/Home");
         }
     }
 }

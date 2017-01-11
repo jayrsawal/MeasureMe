@@ -75,7 +75,7 @@ namespace MeasureMe.Controllers {
             try {
                 user.RegisterUser(model);
                 TempData["Status"] = "Your user account has successfully been created";
-                return Redirect("~/Auth/Login");
+                return Redirect("../Auth/Login");
             } catch (Exception ex) {
                 ModelState.AddModelError("error", ex.Message);
                 return View();
